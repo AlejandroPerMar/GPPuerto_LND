@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' media='screen' href='CSS/principal.css' />
-    <title>Inicio</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/buscar.css' />
+    <title>Buscar</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
                 <a href="editar.html">Editar</a>
                 <a href="buscar.html">Busqueda</a>
             </div>
-            <div class="lateral">
+            <div class="nav" id="lateral">
                 <a href="signin.html">Iniciar sesión</a>
                 <a href="register.html">Registrarse</a>
                 <select name="Idioma">
@@ -29,40 +29,53 @@
                 </select>
             </div>
         </div>
-        </div>
     </div>
 
     <div id="contenido">
         <div id="encabezado">
-            <h1>¿Quieres saber algo de Fórmula 1?</h1>
-            <button><a href="buscar.html">Busca Aquí</a></button>
+            <h1>Búsqueda</h1>
+            <h3>¿Qué buscaremos hoy?</h3>
+            <div class="search">
+                <form action="www.google.com">
+                    <input type="text"
+                        placeholder="Buscar"
+                        name="search">
+                    <button>
+                        Buscar
+                    </button>
+                </form>
+            </div>
         </div>
         <div class="container">
-            <h2>Más Buscados</h2>
             <div class="programas">
                 <div class="contenedor">
                     <h3>Pilotos</h3>
                     <br><br>
-                    <p> Fernando Alonso</p>
-                    <p>Lando Norris </p>
-                    <p> Charles Leclerc </p>
-                    <button><a href="buscar.html">+ Info</a></button>
+                    <p><b>Fernando Alonso</b></p>
+                    <p> </p>
+                    <button><a href="buscar.html">Select</a></button>
                 </div>
                 <div class="contenedor">
                     <h3>Circuitos</h3>
                     <br><br>
-                    <p> Monza</p>
-                    <p> SPA </p>
-                    <p> Catalunya </p>
-                    <button><a href="buscar.html">+ Info</a></button>
+                    <p><b>Catalunya</b></p>
+                    <p> </p>
+                    <button><a href="buscar.html">Select</a></button>
                 </div>
                 <div class="contenedor">
                     <h3>Escuderias</h3>
                     <br><br>
-                    <p> Red Bull </p>
-                    <p> Ferrari </p>
-                    <p> MClaren </p>
-                    <button><a href="buscar.html">+ Info</a></button>
+                    <p><b>Mercedes</b></p>
+                    <p> </p>
+                    <button><a href="buscar.html">Select</a></button>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <h2>Más Buscados</h2>
+                
+                    <br>
                 </div>
             </div>
         </div>

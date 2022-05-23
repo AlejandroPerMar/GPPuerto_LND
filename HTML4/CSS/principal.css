@@ -126,35 +126,6 @@ button:hover{
     border-radius: 15px;
 }
 
-.contenedor:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/front-end.jpg");
-
-}
-
-.contenedor:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/full-stack.jpg");
-}
-
-.contenedor:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/python.jpg");
-
-}
-
 #final{
     display: flex;
     flex-direction: column;
@@ -191,21 +162,21 @@ footer .container{
     align-items: flex-end;
 }
 
-
     #header{
         position: fixed;
         width: 100%;
-    }
-
-    #header .container{
-        flex-direction: row;
-        /*justify-content: space-between;*/
-    }
-
-    #header nav{
+        display:flex;
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
+    }
+
+    #header nav{
+        float: right;
+    }
+
+    #header #lateral{
+        float: left;    
     }
 
     #encabezado h1{
@@ -273,7 +244,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("media/front-end-cropped.jpg");
+        ,url("/HTML4/Imagenes/pilotos.jpg");
 
     }
 
@@ -283,7 +254,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("media/full-stack-cropped.jpg");
+        ,url("/HTML4/Imagenes/monza.png");
     }
 
     .contenedor:nth-child(3){
@@ -292,20 +263,8 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("media/python-cropped.jpg");
+        ,url("/HTML4/Imagenes/escuderias.png");
 
-    }
-
-    #caracteristicas{
-        background-image: url("media/background-2.jpeg");
-        background-repeat: no-repeat;
-        background-size: 500px 400px;
-        @media (min-width: 1200px) {
-            #caracteristicas{
-                background-position-x: calc(100vw - 800px);
-            }
-        }
-        background-position: calc(100vw - 500px) 120px;
     }
 
     #caracteristicas .container{
@@ -327,6 +286,7 @@ footer .container{
     .footer .container{
         justify-content: flex-end;
     }
+   
 
     #caracteristicas{
         background-position-x: calc(100vw - 800px);
